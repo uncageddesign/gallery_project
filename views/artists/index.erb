@@ -1,0 +1,8 @@
+<h1>Artists In Residence</h1>
+
+<% @artists.each do |artist| %>
+  <p><img src="<%= artist.photo %>" alt="Artist photo"></p>
+  <p><%= artist.name %></p>
+  <p><%= artist.birth %> - <%= artist.death %></p>
+  <hr />
+<% end %>

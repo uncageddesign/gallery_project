@@ -10,7 +10,7 @@ Category.delete_all()
 artist1 = Artist.new({
   "name" => "Tamara de Lempicka",
   "bio" => "https://en.wikipedia.org/wiki/Tamara_de_Lempicka",
-  "photo" => "url",
+  "photo" => "http://3.bp.blogspot.com/--SqB2z-COpc/VIgDCCGTHdI/AAAAAAAA_kw/kqQIf3XeFwQ/s1600/2144.jpg",
   "birth" => "16 May 1898",
   "death" =>  "18 March 1980",
   "nationality" => "Polish"
@@ -20,7 +20,7 @@ artist1.save()
 artist2 = Artist.new({
   "name" => "Rene Lalique",
   "bio" => "https://en.wikipedia.org/wiki/Ren%C3%A9_Lalique",
-  "photo" => "url",
+  "photo" => "https://upload.wikimedia.org/wikipedia/en/thumb/c/c8/Rene-jules-lalique.jpg/220px-Rene-jules-lalique.jpg",
   "birth" => "6 April 1860",
   "death" =>  "1 May 1945",
   "nationality" => "French"
@@ -118,5 +118,5 @@ category4 = Category.new({
   })
 category4.save()
 
-binding.pry
-nil
+# binding.pry
+# nil

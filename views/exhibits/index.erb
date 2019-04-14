@@ -1,0 +1,8 @@
+<h1>Exhibitions and Events</h1>
+
+<% @exhibits.each do |exhibit| %>
+  <p><%= exhibit.name %></p>
+  <p>Start: <%= exhibit.run_start %></p>
+  <p>End: <%= exhibit.run_end %></p>
+  <hr />
+<% end %>
