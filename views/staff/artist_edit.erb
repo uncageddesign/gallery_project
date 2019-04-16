@@ -1,5 +1,33 @@
-#prepopulated form to edit artist entries
+<div class="staff">
 
-#once submitted redirect to staff/index
+  <h1>Gallery Management</h1>
 
-#logo and main nav to return to public site
+  <div class="sidebar">
+    <a href="/staff">Staff Home</a>
+    <a href="/staff/artists/">Artists</a>
+    <a href="/staff/exhibits/">Exhibitions</a>
+  </div>
+
+  <h2>Update Artist Profile</h2>
+
+  <form action="/staff/artist/<%= @artist.id %>/update" method="post">
+    <label>
+      Artist Name: <input id="name" type="text" name="name" values="<%= @artist.name %>">
+    </label>
+    <label>
+      Birth: <input id="birth" type="text" name="birth" value="<%= @artist.birth %>">
+    </label>
+    <label>
+      Death: <input id="death" type="text" name="death" value="<%= @artist.death %>">
+    </label>
+    <label>
+      Nationality: <input id="nationality" type="text" name="nationality" value="<%= @artist.nationality %>">
+    </label>
+    <label>
+      Bio:
+      <textarea id="bio" name="bio" rows="20" cols="120"> <%= @artist.bio %> </textarea>
+    </label>
+    <input type="submit" value="Update Profile">
+  </form>
+
+</div>

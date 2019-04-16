@@ -1,0 +1,49 @@
+<div class="staff">
+
+  <h1>Gallery Management</h1>
+
+  <div class="sidebar">
+    <a href="/staff">Staff Home</a>
+    <a href="/staff/artists/">Artists</a>
+    <a href="/staff/exhibits/">Exhibitions</a>
+  </div>
+
+  <h2>Update Exhibition</h2>
+
+  <form action="/staff/exhibit/new" method="post">
+    <label>
+      Name: <input id="name" type="text" name="name">
+    </label>
+    <label>
+      Start Date: <input id="run_start" type="text" name="run_start">
+    </label>
+    <label>
+      End Date: <input id="run_end" type="text" name="run_end">
+    </label>
+    <label>
+      Room: <input id="room" type="text" name="room">
+    </label>
+    <label>
+      Visitor Type: <input id="visitor_type" type="text" name="visitor_type">
+    </label>
+    <label>
+      Category: <select name="exhibit_id">
+                  <option>Art Deco</option>
+                  <option>Art Nouveau</option>
+                  <option>Contempory Art</option>
+                  <option>Modernism</option>
+                  <option>De Stijl</option>
+                  <option>Impressionism</option>
+                  <option>Cubism</option>
+                  <option>Dada</option>
+                  <option>Pop Art</option>
+                </select>
+    </label>
+    <label>
+      Bio:
+      <textarea id="blurb" name="blurb" rows="20" cols="120"></textarea>
+    </label>
+    <input type="submit" value="New Exhibit">
+  </form>
+
+</div>

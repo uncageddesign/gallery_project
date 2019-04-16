@@ -1,8 +1,19 @@
-<h1>Artists In Residence</h1>
+<div class="content">
 
-<% @artists.each do |artist| %>
-  <p><img src="<%= artist.photo %>" alt="Artist photo"></p>
-  <p><%= artist.name %></p>
-  <p><%= artist.birth %> - <%= artist.death %></p>
-  <hr />
-<% end %>
+  <h1>Artists In Residence</h1>
+
+  <div class="">
+
+    <div class="flex-container">
+    <% @artists.each do |artist| %>
+      <div class="item card">
+      <p><img class="card-img"src="<%= artist.photo %>" alt="Artist photo"></p>
+      <h2><%= artist.name %></h2>
+      <p><%= artist.birth %> - <%= artist.death %></p>
+      <p><a href="/artists/<%= artist.id %>">View Profile>></a></p>
+      </div>
+    <% end %>
+
+    </div>
+  </div>
+</div>

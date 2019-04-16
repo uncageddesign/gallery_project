@@ -1,8 +1,20 @@
-<h1>Exhibitions and Events</h1>
+<div class="content">
 
-<% @exhibits.each do |exhibit| %>
-  <p><%= exhibit.name %></p>
-  <p>Start: <%= exhibit.run_start %></p>
-  <p>End: <%= exhibit.run_end %></p>
-  <hr />
-<% end %>
+  <h1>Exhibitions and Events</h1>
+
+  <div class="">
+
+    <div class="flex-container">
+      <% @exhibits.each do |exhibit| %>
+      <div class="item card">
+        <p><img class="card-img" src="<%= exhibit.photo %>" alt="Exhibit photo"></p>
+        <h2><%= exhibit.name %></h2>
+        <p>Start: <%= exhibit.run_start %></p>
+        <p>End: <%= exhibit.run_end %></p>
+        <p><a href="/exhibits/<%= exhibit.id %>">View Details>></a></p>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>

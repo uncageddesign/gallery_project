@@ -1,5 +1,39 @@
-#prepopulated form to update the exhibits
+<div class="staff">
 
-#once submitted redirect to staff/index
+  <h1>Gallery Management</h1>
 
-#logo and main nav to return to public site
+  <div class="sidebar">
+    <a href="/staff">Staff Home</a>
+    <a href="/staff/artists/">Artists</a>
+    <a href="/staff/exhibits/">Exhibitions</a>
+  </div>
+
+  <h2>Update Exhibition</h2>
+
+  <form action="/staff/exhibit/<%= @exhibit.id %>/update" method="post">
+    <label>
+      Name: <input id="name" type="text" name="name" values="<%= @exhibit.name %>">
+    </label>
+    <label>
+      Start Date: <input id="run_start" type="text" name="run_start" value="<%= @exhibit.run_start %>">
+    </label>
+    <label>
+      End Date: <input id="run_end" type="text" name="run_end" value="<%= @exhibit.run_end %>">
+    </label>
+    <label>
+      Room: <input id="room" type="text" name="room" value="<%= @exhibit.room %>">
+    </label>
+    <label>
+      Visitor Type: <input id="visitor_type" type="text" name="visitor_type" value="<%= @exhibit.visitor_type %>">
+    </label>
+    <label>
+      Category: <input id="category" type="text" name="category" value="<%= @exhibit.category %>">
+    </label>
+    <label>
+      Bio:
+      <textarea id="blurb" name="blurb" rows="20" cols="120"> <%= @exhibit.blurb %> </textarea>
+    </label>
+    <input type="submit" value="Update Exhibit">
+  </form>
+
+</div>

@@ -1,6 +1,33 @@
-<h1>Categories</h1>
+<div class="content">
 
-<% @categories.each do |category| %>
-  <p><%= category.name %></p>
-  <hr />
-<% end %>
+  <h1>Plan Your Visit</h1>
+
+  <div class="">
+    <form action="/visit/search" method="post">
+      <label>
+        Search Exhibits By Artist: <br>
+        <select name="artist_id">
+          <% for assign in @assign %>
+          <option value="<%= assign.artist.id %>"><%= assign.artist.name %></option>
+          <% end %>
+        </select>
+      </label>
+      <input type="submit" value="Search">
+    </form>
+  </div>
+
+  <div class="">
+    <form action="/visit/search" method="post">
+      <label>
+        Search Exhibits By Category: <br>
+        <select name="exhibit_id">
+          <% for assign in @assign %>
+          <option value="<%= assign.exhibit %>"><%= assign.exhibit.category %></option>
+          <% end %>
+        </select>
+      </label>
+      <input type="submit" value="Search">
+    </form>
+  </div>
+
+</div>

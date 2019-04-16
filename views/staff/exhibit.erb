@@ -1,3 +1,33 @@
-#list of exhibits with buttons to update or delete entry
+<div class="staff">
 
-#same set up as artist page
+  <h1>Gallery Management</h1>
+
+    <div class="sidebar">
+      <a href="/staff">Staff Home</a>
+      <a href="/staff/artists/">Artists</a>
+      <a href="/staff/exhibits/">Exhibitions</a>
+    </div>
+
+  <h2>Exhibitions</h2>
+
+  <div class="flex-container">
+
+    <div class="item">
+      <% @exhibits.each do |exhibit| %>
+        <p><%= exhibit.name %></p>
+        <p>Start: <%= exhibit.run_start %></p>
+        <p>End: <%= exhibit.run_end %></p>
+        <form action="/staff/exhibit/<%= exhibit.id %>/delete" method="POST">
+          <input type="submit" value="Delete Artist">
+        </form>
+
+        <form action="/staff/exhibit/<%= exhibit.id %>/update" method="GET">
+          <input type="submit" value="Edit Exhibit">
+        </form>
+        <hr />
+      <% end %>
+    </div>
+
+  </div>
+
+</div>

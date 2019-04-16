@@ -1,5 +1,28 @@
-#show all info for an artist
+<div class="staff">
 
-#have button to delete entry
+  <h1>Gallery Management</h1>
 
-#have button to edit information (form prepopulated with the artist's info)
+  <div class="sidebar">
+    <a href="/staff">Staff Home</a>
+    <a href="/staff/artists/">Artists</a>
+    <a href="/staff/exhibits/">Exhibitions</a>
+  </div>
+
+  <h2>Artists</h2>
+
+  <% @artists.each do |artist| %>
+    <p><img src="<%= artist.photo %>" alt="Artist photo"></p>
+    <p><%= artist.name %></p>
+    <p><%= artist.birth %> - <%= artist.death %></p>
+
+    <form action="/staff/artist/<%= artist.id %>/delete" method="POST">
+      <input type="submit" value="Delete Artist">
+    </form>
+
+    <form action="/staff/artist/<%= artist.id %>/update" method="GET">
+      <input type="submit" value="Edit Artist">
+    </form>
+    <hr />
+  <% end %>
+
+</div>

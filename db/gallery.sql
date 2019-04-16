@@ -1,4 +1,4 @@
-DROP TABLE categories;
+DROP TABLE assign;
 DROP TABLE artists;
 DROP TABLE exhibits;
 
@@ -20,12 +20,12 @@ CREATE TABLE exhibits (
   room INT,
   run_start VARCHAR,
   run_end VARCHAR,
-  visitor_type VARCHAR
+  visitor_type VARCHAR,
+  category VARCHAR
 );
 
-CREATE TABLE categories (
+CREATE TABLE assign (
   id SERIAL PRIMARY KEY,
-  name VARCHAR,
   artist_id INT REFERENCES artists(id) ON DELETE CASCADE,
   exhibit_id INT REFERENCES exhibits(id) ON DELETE CASCADE
 );
