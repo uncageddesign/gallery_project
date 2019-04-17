@@ -33,6 +33,11 @@
   padding: 10px;
 }
 
+.list-photo {
+  width: 250px;
+  height: 250px;
+}
+
 #groups{
   margin: 10px;
   padding: 10px;

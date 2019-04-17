@@ -5,7 +5,9 @@
   <div class="sidebar">
     <a href="/staff">Staff Home</a>
     <a href="/staff/artists/">Artists</a>
+    <a href="#">Add Artists</a>
     <a href="/staff/exhibits/">Exhibitions</a>
+    <a href="/staff/exhibits/new">Add Exhibitions</a>
   </div>
 
   <h2>New Artist Profile</h2>
@@ -13,23 +15,23 @@
   <form action="/staff/artist/new" method="post">
     <label>
       Artist Name: <input id="name" type="text" name="name">
-    </label>
+    </label> <br>
     <label>
       Birth: <input id="birth" type="text" name="birth">
     </label>
     <label>
       Death: <input id="death" type="text" name="death">
-    </label>
+    </label> <br>
     <label>
       Nationality: <input id="nationality" type="text" name="nationality">
-    </label>
+    </label> <br>
     <label>
-      Bio:
+      Bio: <br>
       <textarea id="bio" name="bio" rows="20" cols="120"></textarea>
-    </label>
+    </label> <br>
     <label>
       Photo: <input id="photo" type="text" name="photo" value="URL">
-    </label>
-    <input type="submit" value="Create Profile">
+    </label> <br>
+    <input type="submit" value="Create Profile" class="button-staff">
   </form>
 </div>

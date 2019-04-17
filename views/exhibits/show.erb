@@ -1,12 +1,12 @@
 <div class="content">
 
-  <p><img src="<%= @exhibit.photo %>" alt="<%= @exhibit.name %> photo"></p>
+  <p><img class="profile-photo" src="<%= @exhibit.photo %>" alt="<%= @exhibit.name %> photo"></p>
 
-  <h2><%= @exhibit.name %></h2>
-  <p>Dates: <%= @exhibit.run_start %> - <%= @exhibit.run_end %></p>
-  <p>Room: <%= @exhibit.room %></p>
-  <p>Category: <%= @exhibit.category %></p>
-  <p>Recommended For: <%= @exhibit.visitor_type %></p>
+  <h1><%= @exhibit.name %></h1>
+  <p><strong>Dates:</strong> <%= @exhibit.run_start %> - <%= @exhibit.run_end %> <br>
+  <strong>Category:</strong> <%= @exhibit.category %> <br>
+  <strong>Recommended For:</strong> <%= @exhibit.visitor_type %> <br>
+  <strong>Room:</strong> <%= @exhibit.room %></p>
 
   <p><%= @exhibit.blurb %></p>
 

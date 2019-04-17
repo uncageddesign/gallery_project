@@ -1,0 +1,18 @@
+.search {
+  background-color: whitesmoke;
+  padding: 10px 10px 20px 10px;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  background-color: steelblue;
+  padding: 15px 32px;
+}
+
+.button-staff {
+  color: white;
+  text-decoration: none;
+  background-color: dimgrey;
+  padding: 10px 28px;
+}

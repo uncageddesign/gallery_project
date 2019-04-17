@@ -9,8 +9,8 @@
       <div class="item card">
       <p><img class="card-img"src="<%= artist.photo %>" alt="Artist photo"></p>
       <h2><%= artist.name %></h2>
-      <p><%= artist.birth %> - <%= artist.death %></p>
-      <p><a href="/artists/<%= artist.id %>">View Profile>></a></p>
+      <p style="margin-bottom:40px"><%= artist.birth %> - <%= artist.death %></p>
+      <p><a href="/artists/<%= artist.id %>" class="button">View Profile</a></p>
       </div>
     <% end %>
 

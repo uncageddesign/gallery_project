@@ -1,6 +1,7 @@
 body {
   background-color: white;
   margin: 0;
+  font-family: sans-serif;
 }
 
 header {
@@ -11,6 +12,19 @@ header {
   background-image: url('/images/header.png');
   background-repeat: no-repeat;
   background-position: right;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .content {
@@ -88,6 +102,22 @@ footer {
   width: 33.33%;
 }
 
-#exhibit-container{
-  background-color: blue;
+.banner {
+  width: 100%;
+}
+
+.front {
+  float: right;
+  padding-left: 30px;
+}
+
+.front-text {
+  float: left;
+}
+
+.profile-photo {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  float: right;
 }

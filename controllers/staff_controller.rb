@@ -6,7 +6,16 @@ require_relative( '../models/assign.rb' )
 also_reload( '../models/*' )
 
 get '/staff' do
+  @assign = Assign.all()
+  @exhibits = @assign.map {|obj| obj.exhibit }
+  @categories = @exhibits.uniq { |obj| obj.category}
   erb(:"staff/index")
+end
+
+post '/staff/new' do
+  @assign = Assign.new(params)
+  @assign.save
+  redirect to (:"/staff")
 end
 
 get '/staff/artists/' do

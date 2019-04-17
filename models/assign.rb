@@ -20,6 +20,12 @@ class Assign
     @id = results.first()['id'].to_i
   end
 
+  def update()
+    sql = "UPDATE assign SET (artist_id, exhibit_id) = ($1, $2) RETURNING id"
+    values = [@artist_id, @exhibit_id, @id]
+    results = SqlRunner.run(sql, values)
+  end
+
   def self.all()
     sql = "SELECT * FROM assign"
     results = SqlRunner.run(sql)

@@ -7,8 +7,8 @@
       <img src="/images/staff-art.jpg" alt="Art" class="home">
         <div id="groups">
           <h2>Artists</h2>
-          <p><a href="staff/artists/">All Artists</a></p>
-          <p><a href="staff/artist/new">Add New Artist</a></p>
+          <p style="margin-bottom:40px"><a href="staff/artists/" class="button-staff">All Artists</a></p>
+          <p style="margin-bottom:40px"><a href="staff/artist/new" class="button-staff">Add New Artist</a></p>
         </div>
     </div>
   </div>
@@ -18,9 +18,32 @@
       <img src="/images/staff-exhibit.jpg" alt="Exhibit" class="home">
         <div id="groups">
           <h2>Exhibitions</h2>
-          <p><a href="staff/exhibits/">All Exhibitions</a></p>
-          <p><a href="staff/exhibit/new">Add New Exhibition</a></p>
-        <div>
+          <p style="margin-bottom:40px"><a href="staff/exhibits/" class="button-staff">All Exhibitions</a></p>
+          <p style="margin-bottom:40px"><a href="staff/exhibit/new" class="button-staff">Add New Exhibition</a></p>
+
+          <h3>Assign Artist to Exhibit</h3>
+          <form action="/staff/new" method="post">
+            <label>
+            Select Artist:
+              <select name="artist_id">
+                <% for assign in @assign %>
+                <option value="<%= assign.artist.id %>"><%= assign.artist.name %></option>
+                <% end %>
+              </select>
+            </label>
+            <br>
+            <label>
+              Select Exhibit:
+              <select name="exhibit_id">
+                <% for exhibit in @categories %>
+                <option value="<%= exhibit.category %>"><%= exhibit.category %></option>
+                <% end %>
+              </select>
+            </label>
+
+            <input class="" type='submit' value="Assign">
+          </form>
+        </div>
     </div>
   </div>
 

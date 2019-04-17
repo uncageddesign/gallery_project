@@ -1,9 +1,15 @@
 <div class="content">
 
+<div>
+  <img  class="banner" src="/images/Ballochmyle-house.jpg" alt="A view of Ballochmyle House">
+</div>
+
   <h1>Plan Your Visit</h1>
 
-  <div class="">
-    <form action="/visit/search" method="post">
+  <h2>What to See</h2>
+  <div class="search">
+
+    <form action="/visit/search/artist" method="get">
       <label>
         Search Exhibits By Artist: <br>
         <select name="artist_id">
@@ -14,20 +20,32 @@
       </label>
       <input type="submit" value="Search">
     </form>
-  </div>
-
-  <div class="">
-    <form action="/visit/search" method="post">
+    <br>
+    <form action="/visit/search/category" method="get">
       <label>
         Search Exhibits By Category: <br>
         <select name="exhibit_id">
-          <% for assign in @assign %>
-          <option value="<%= assign.exhibit %>"><%= assign.exhibit.category %></option>
+          <% for exhibit in @categories %>
+          <option value="<%= exhibit.category %>"><%= exhibit.category %></option>
           <% end %>
         </select>
       </label>
       <input type="submit" value="Search">
     </form>
+  </div>
+
+  <div>
+  <h2>How to Find Us</h2>
+
+  <img src="/images/map.png" alt="Example of what the map would look like">
+
+    <div class="">
+      <h3>By Car</h3>
+      <p>some details</p>
+
+      <h3>By Bus</h3>
+      <p>some details</p>
+    </div>
   </div>
 
 </div>

@@ -2,9 +2,11 @@
 
   <h1>Artist in Profile</h1>
 
-  <p><img src="<%= @artist.photo %>" alt="<%= @artist.name %> photo"></p>
+  <p><img class="profile-photo" src="<%= @artist.photo %>" alt="<%= @artist.name %> photo"></p>
   <h2><%= @artist.name %></h2>
   <p><%= @artist.birth %> - <%= @artist.death %></p>
   <p>Nationality: <%= @artist.nationality %> </p>
+
+  <p><%= @artist.bio %></p>
 
 </div>
