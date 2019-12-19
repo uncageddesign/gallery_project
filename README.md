@@ -18,4 +18,4 @@ Site consists of 3 sections
 Functionality allows for saving, updating and deleting in the artist and exhibits tables of the DB. Also allows artists to be assigned to exhibits.
 
 #### Home Page
-![Home Page](/images/Screenshot_HP.png)
+![Home Page](/public/images/Screenshot_HP.png)
