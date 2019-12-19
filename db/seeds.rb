@@ -55,7 +55,9 @@ artist4.save()
 
 exhibit1 = Exhibit.new({
   "name" => "The Roaring Twenties",
-  "blurb" => "Roaring 20s info",
+  "blurb" => "Vestibulum ut orci interdum, eleifend erat nec, congue nunc. Sed felis sapien, finibus a magna non, pharetra imperdiet neque. Pellentesque ac erat urna. Suspendisse potenti. In commodo sollicitudin gravida. Mauris suscipit finibus ipsum, vitae gravida mauris mattis quis. Donec molestie, nulla a aliquet auctor, tortor tellus semper ante, nec sagittis est lorem at elit. Nam tortor ex, dapibus in velit id, auctor convallis urna. Suspendisse dictum augue et massa maximus porta.
+
+  Mauris commodo enim at nunc mattis venenatis. Integer mollis magna sit amet aliquet rutrum. Aliquam et aliquet enim, non hendrerit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras dolor nisi, gravida at elit ornare, ultricies luctus enim. In hac habitasse platea dictumst. Nam interdum vehicula maximus. Donec sagittis nec urna in vehicula. Donec fringilla massa a nisl euismod, et condimentum quam facilisis. Sed magna ipsum, tristique quis consequat vel, pretium in nisi. Vivamus est nunc, commodo in blandit eget, volutpat interdum massa. Etiam suscipit arcu erat, sit amet tempor orci vehicula in. Duis efficitur dignissim aliquet.",
   "photo" => "/images/lempicka_painting2.jpg",
   "room" => "1",
   "run_start" => "1 April 2019",
@@ -67,7 +69,9 @@ exhibit1.save()
 
 exhibit2 = Exhibit.new({
   "name" => "Modern Scotland",
-  "blurb" => "Scottish artist from the last 100 years",
+  "blurb" => "Vestibulum ut orci interdum, eleifend erat nec, congue nunc. Sed felis sapien, finibus a magna non, pharetra imperdiet neque. Pellentesque ac erat urna. Suspendisse potenti. In commodo sollicitudin gravida. Mauris suscipit finibus ipsum, vitae gravida mauris mattis quis. Donec molestie, nulla a aliquet auctor, tortor tellus semper ante, nec sagittis est lorem at elit. Nam tortor ex, dapibus in velit id, auctor convallis urna. Suspendisse dictum augue et massa maximus porta.
+
+  Mauris commodo enim at nunc mattis venenatis. Integer mollis magna sit amet aliquet rutrum. Aliquam et aliquet enim, non hendrerit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras dolor nisi, gravida at elit ornare, ultricies luctus enim. In hac habitasse platea dictumst. Nam interdum vehicula maximus. Donec sagittis nec urna in vehicula. Donec fringilla massa a nisl euismod, et condimentum quam facilisis. Sed magna ipsum, tristique quis consequat vel, pretium in nisi. Vivamus est nunc, commodo in blandit eget, volutpat interdum massa. Etiam suscipit arcu erat, sit amet tempor orci vehicula in. Duis efficitur dignissim aliquet.",
   "photo" => "/images/john-bellany-boat-builders.jpg",
   "room" => "2",
   "run_start" => "10 December 2018",
@@ -79,7 +83,10 @@ exhibit2.save()
 
 exhibit3 = Exhibit.new({
   "name" => "What Makes an Artist",
-  "blurb" => "Investigating what it takes to be an artist",
+  "blurb" => "Investigating what it takes to be an artist
+  Vestibulum ut orci interdum, eleifend erat nec, congue nunc. Sed felis sapien, finibus a magna non, pharetra imperdiet neque. Pellentesque ac erat urna. Suspendisse potenti. In commodo sollicitudin gravida. Mauris suscipit finibus ipsum, vitae gravida mauris mattis quis. Donec molestie, nulla a aliquet auctor, tortor tellus semper ante, nec sagittis est lorem at elit. Nam tortor ex, dapibus in velit id, auctor convallis urna. Suspendisse dictum augue et massa maximus porta.
+
+  Mauris commodo enim at nunc mattis venenatis. Integer mollis magna sit amet aliquet rutrum. Aliquam et aliquet enim, non hendrerit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras dolor nisi, gravida at elit ornare, ultricies luctus enim. In hac habitasse platea dictumst. Nam interdum vehicula maximus. Donec sagittis nec urna in vehicula. Donec fringilla massa a nisl euismod, et condimentum quam facilisis. Sed magna ipsum, tristique quis consequat vel, pretium in nisi. Vivamus est nunc, commodo in blandit eget, volutpat interdum massa. Etiam suscipit arcu erat, sit amet tempor orci vehicula in. Duis efficitur dignissim aliquet.",
   "photo" => "/images/makes-artist.jpg",
   "room" => "3",
   "run_start" => "16 April 2019",
@@ -91,7 +98,10 @@ exhibit3.save()
 
 exhibit4 = Exhibit.new({
   "name" => "Study of a Human",
-  "blurb" => "A close look at the human body through the eye of the artist.",
+  "blurb" => "A close look at the human body through the eye of the artist.
+  Vestibulum ut orci interdum, eleifend erat nec, congue nunc. Sed felis sapien, finibus a magna non, pharetra imperdiet neque. Pellentesque ac erat urna. Suspendisse potenti. In commodo sollicitudin gravida. Mauris suscipit finibus ipsum, vitae gravida mauris mattis quis. Donec molestie, nulla a aliquet auctor, tortor tellus semper ante, nec sagittis est lorem at elit. Nam tortor ex, dapibus in velit id, auctor convallis urna. Suspendisse dictum augue et massa maximus porta.
+
+  Mauris commodo enim at nunc mattis venenatis. Integer mollis magna sit amet aliquet rutrum. Aliquam et aliquet enim, non hendrerit dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras dolor nisi, gravida at elit ornare, ultricies luctus enim. In hac habitasse platea dictumst. Nam interdum vehicula maximus. Donec sagittis nec urna in vehicula. Donec fringilla massa a nisl euismod, et condimentum quam facilisis. Sed magna ipsum, tristique quis consequat vel, pretium in nisi. Vivamus est nunc, commodo in blandit eget, volutpat interdum massa. Etiam suscipit arcu erat, sit amet tempor orci vehicula in. Duis efficitur dignissim aliquet.",
   "photo" => "/images/human-study.jpg",
   "room" => "4",
   "run_start" => "9 July 2019",

@@ -16,3 +16,21 @@
   background-color: dimgrey;
   padding: 10px 28px;
 }
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type=text], select {
+  width: 200px;
+  padding: 10px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+}

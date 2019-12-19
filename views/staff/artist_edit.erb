@@ -5,9 +5,9 @@
   <div class="sidebar">
     <a href="/staff">Staff Home</a>
     <a href="/staff/artists/">Artists</a>
-    <a href="/staff/artists/new">Add Artists</a>
+    <a href="/staff/artist/new">Add Artists</a>
     <a href="/staff/exhibits/">Exhibitions</a>
-    <a href="/staff/exhibits/new">Add Exhibitions</a>
+    <a href="/staff/exhibit/new">Add Exhibitions</a>
   </div>
 
   <h2>Update Artist Profile</h2>
@@ -15,21 +15,21 @@
   <form action="/staff/artist/<%= @artist.id %>/update" method="post">
     <label>
       Artist Name: <input id="name" type="text" name="name" values="<%= @artist.name %>">
-    </label>
+    </label> <br>
     <label>
       Birth: <input id="birth" type="text" name="birth" value="<%= @artist.birth %>">
     </label>
     <label>
       Death: <input id="death" type="text" name="death" value="<%= @artist.death %>">
-    </label>
+    </label> <br>
     <label>
       Nationality: <input id="nationality" type="text" name="nationality" value="<%= @artist.nationality %>">
-    </label>
+    </label> <br>
     <label>
-      Bio:
+      Bio: <br>
       <textarea id="bio" name="bio" rows="20" cols="120"> <%= @artist.bio %> </textarea>
-    </label>
-    <input type="submit" value="Update Profile">
+    </label> <br>
+    <input type="submit" value="Update Profile" class="button-staff">
   </form>
 
 </div>

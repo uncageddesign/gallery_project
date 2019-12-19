@@ -13,10 +13,8 @@ get '/visit' do
   erb(:"visit/index")
 end
 
-get '/visit/search/artist' do
-  # params['exhibit_id']
-  @assign = Assign.all()
-
+get '/visit/search/artist/' do
+  @search = Assign.search_exhibits(params['artist_id'])
   erb(:"visit/show_artist")
 end
 

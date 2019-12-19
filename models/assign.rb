@@ -32,6 +32,13 @@ class Assign
     return results.map { |assigned| Assign.new(assigned) }
   end
 
+  def self.search_exhibits(artist_id)
+    sql = "SELECT * FROM exhibits LEFT JOIN assign ON exhibits.id = assign.exhibit_id WHERE assign.artist_id = $1"
+    values = [artist_id]
+    results = SqlRunner.run(sql, values)
+    return results.map { |exhibit| Exhibit.new(exhibit)}
+  end
+
   def exhibit
     sql = "SELECT * FROM exhibits WHERE id = $1"
     values = [@exhibit_id]

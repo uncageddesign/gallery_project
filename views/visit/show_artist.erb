@@ -1,9 +1,20 @@
 <div class="content">
 
-  <h1>Your Recommendations</h1>
+  <h1>Exhibitions and Events</h1>
 
-  <div>
+  <div class="">
 
+    <div class="flex-container">
+      <% @search.each do |exhibit| %>
+      <div class="item card">
+        <p><img class="card-img" src="<%= exhibit.photo %>" alt="Exhibit photo"></p>
+        <h2><%= exhibit.name %></h2>
+        <p>Start: <%= exhibit.run_start %></p>
+        <p style="margin-bottom:30px">End: <%= exhibit.run_end %></p>
+        <p><a href="/exhibits/<%= exhibit.id %>" class="button">View Details</a></p>
+      </div>
+      <% end %>
+    </div>
   </div>
 
 </div>
